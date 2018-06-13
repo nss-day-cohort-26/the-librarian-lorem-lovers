@@ -5,6 +5,7 @@ function searchByGenre(genreQuery){
             let newP = document.createElement("p");
             newP.textContent = `${bookArray[i].title} by ${bookArray[i].author}`
             section.appendChild(newP);
+            section.id = "searchSection"
         }
     }
     console.log(section);
