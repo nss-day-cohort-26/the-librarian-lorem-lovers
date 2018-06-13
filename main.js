@@ -15,3 +15,5 @@ for(let i = 0; i < 8; i++){
 document.getElementById("checkOut").addEventListener("click", checkoutBuilder)
 
 document.getElementById("displayBookShelf").addEventListener("click", displayBookShelf)
+
+document.getElementById("return").addEventListener("click", returnBuilder)
