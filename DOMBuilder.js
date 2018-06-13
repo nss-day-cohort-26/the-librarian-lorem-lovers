@@ -3,7 +3,7 @@ function DOMBuilder(element){
         document.getElementsByClassName("builder")[0].removeChild(document.getElementById("error"));
     }
     if(element.id == "error"){
-        document.getElementsByClassName("builder")[0].appendChild(element);
+        document.getElementById("errorSection").appendChild(element);
     }
     if(element.id == "searchSection"){
         if(document.getElementById("searchSection") != null){
