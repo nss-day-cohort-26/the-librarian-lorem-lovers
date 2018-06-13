@@ -1,7 +1,7 @@
 const customers= {
     seth:{
         genre: "Science-Fiction",
-        bookshelf: "",
+        bookshelf: [],
         libraryCard: "",
         firstName: "Seth",
         lastName: "Dana",
@@ -11,7 +11,7 @@ const customers= {
     },
     shu:{
         genre: "Science-Fiction",
-        bookshelf: "",
+        bookshelf: [],
         libraryCard: "",
         firstName: "Shuaib",
         lastName: "Sajid",
@@ -21,7 +21,7 @@ const customers= {
     },
     jake:{
         genre: "Fantasy",
-        bookshelf: "",
+        bookshelf: [],
         libraryCard: "",
         firstName: "Jake",
         lastName: "Neild",
@@ -31,7 +31,7 @@ const customers= {
     },
     brett:{
         genre: "Fantasy",
-        bookshelf: "",
+        bookshelf: [],
         libraryCard: "",
         firstName: "Brett",
         lastName: "Shearin",
