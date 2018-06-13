@@ -1,1 +1,3 @@
-var secFrag = document.createDocumentFragment();
+function DOMBuilder(element){
+    document.getElementsByClassName("builder")[0].appendChild(element);
+}
