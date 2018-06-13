@@ -67,14 +67,15 @@ function checkoutBuilder(){
         } else{
             checkoutBook(cTitle, cAuthor, cCustomer);
             let log = document.createElement("section");
+            log.id = "bookShelfDisplay";
             let p1 = document.createElement("p");
             p1.textContent = "You checked out a book!"
             let p2 = document.createElement("p");
-            p2.textContent = `Thank you ${customerInput} for checking out ${titleInput} by ${authorInput}.  Your book will be due back at ${bookArray[bookObj].dueDate}`
+            p2.textContent = `Thank you ${customerInput.value} for checking out ${titleInput.value} by ${authorInput.value}.  Your book will be due back at ${bookObj.dueDate}`
             log.appendChild(p1);
             log.appendChild(document.createElement("br"))
             log.appendChild(p2);
-            DOMBuilder(log)
+            DOMBuilder(log);
         }
 
         
