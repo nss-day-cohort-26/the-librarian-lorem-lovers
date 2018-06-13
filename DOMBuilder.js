@@ -1,5 +1,8 @@
 function DOMBuilder(element){
     document.getElementsByClassName("builder")[0].appendChild(element);
+    if(document.getElementById("welcome") != undefined){
+        document.getElementsByClassName("builder")[0].document.getElementById("welcome");
+    }
 
     if(document.getElementById("error")){
         document.getElementsByClassName("builder")[0].removeChild(document.getElementById("error"));
