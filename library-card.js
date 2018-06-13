@@ -1,17 +1,6 @@
-const customers = {
-    seth: {
-        firstName: "Seth",
-        lastName: "Dana",
-        libraryCard: 0,
-        favoriteGenre: "Sci-Fi",
-    },
 
-    test: {
-        firstName: "test",
-        libraryCard: 0,
-    }
-}
 //Library Card Generator
+//Seth Dana
 
 const libraryCards = Object.create({},{
     currentCardNumber: {
@@ -22,16 +11,10 @@ const libraryCards = Object.create({},{
     generateCard: {
         writable: false,
         enumerable: false,
+        //cardObject is the location of where to place the library card number generated ie. customers.seth.libraryCard
         value: function(cardObject){
             
            return cardObject =libraryCards.currentCardNumber++
         }
     },
 })
-
-
-customers.seth.libraryCard = libraryCards.generateCard(customers.seth.libraryCard)
-customers.test.libraryCard = libraryCards.generateCard(customers.test.libraryCard)
-
-console.log(customers.seth)
-console.log(customers.test)
