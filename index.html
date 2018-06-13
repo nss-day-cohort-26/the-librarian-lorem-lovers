@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>The Librarian</title>
+</head>
+<body>
+    <h1>Welcome to the Library</h1>
+    <!-- "Horror", "Nonfiction", "Mystery", "Action", "Crime", "Romance", "Fantasy", "Sci Fi" -->
+    <div class = "div div-dropDown">
+            <button class="dropbtn">Genre</button>
+            <div class="dropdown-content">
+                <a href="#" class = "menu-item" id ="horror">Horror</a>
+                <a href="#" class = "menu-item" id ="nonfiction">Nonfiction</a>
+                <a href="#" class = "menu-item" id ="mystery">Mystery</a>
+                <a href="#" class = "menu-item" id ="action">Action</a>
+                <a href="#" class = "menu-item" id ="crime">Crime</a>
+                <a href="#" class = "menu-item" id ="romance">Romance</a>
+                <a href="#" class = "menu-item" id ="fantasy">Fantasy</a>
+                <a href="#" class = "menu-item" id ="sci-Fic">Sci Fi</a>
+            </div>
+    </div>
+
+    <div>
+        <input type="text" placeholder="Customer Name" id="customerName">
+        <input type="text" placeholder="Book tile" id = "titleofBook">
+        <input type="text" placeholder="Book author" id = "authorOfBook">
+        <button type="button" id="checkOut">Check out</button>
+        <button type="button" id="return">Return</button>
+    </div>
+
+    <section class="builder">
+        
+    </section>
+    
+  
+    <script src="customers.js"></script>
+    <script src="library-cards.js"></script>
+    <script src="DOMBuilder.js"></script>
+    <script src="bookGenerator.js"></script>
+    <script src="searchByGenre.js"></script>
+    <script src="searchBuilder.js"></script>
+    <script src="genreSelector.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
