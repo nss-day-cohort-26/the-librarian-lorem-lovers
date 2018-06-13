@@ -20,14 +20,14 @@ function returnBuilder(){
             if(fullName.toUpperCase() == customerInput.value.toUpperCase()){
                 validCustomer = true;
                 cCustomer = person;
-                for(let i = 0; i < customer[person].bookshelf.length; i++){
-                    if(customer[person].bookshelf[i].title.toUpperCase() == titleInput.value.toUpperCase()){
+                for(let i = 0; i < customers[person].bookshelf.length; i++){
+                    if(customers[person].bookshelf[i].title.toUpperCase() == titleInput.value.toUpperCase()){
                         validTitle = true;
-                        cTitle = bookArray[i].title;
-                        bookObj= customer[person].bookshelf[i];
-                        if(customer[person].bookshelf[i].author.toUpperCase() == authorInput.value.toUpperCase()){
+                        cTitle = customers[person].bookshelf[i].title;
+                        bookObj= customers[person].bookshelf[i];
+                        if(customers[person].bookshelf[i].author.toUpperCase() == authorInput.value.toUpperCase()){
                             validAuthor = true;
-                            cAuthor = customer[person].bookshelf[i].author;
+                            cAuthor = customers[person].bookshelf[i].author;
                         }
                     }
                 }
@@ -66,7 +66,7 @@ function returnBuilder(){
             let p1 = document.createElement("p");
             p1.textContent = "You returned a book!"
             let p2 = document.createElement("p");
-            p2.textContent = `Thank you ${customerInput.value} for checking out ${titleInput.value} by ${authorInput.value}.  Your book will be due back at ${bookObj.dueDate}`
+            p2.textContent = `Thank you ${customerInput.value} for returning ${titleInput.value} by ${authorInput.value}.`
             log.appendChild(p1);
             log.appendChild(document.createElement("br"))
             log.appendChild(p2);
