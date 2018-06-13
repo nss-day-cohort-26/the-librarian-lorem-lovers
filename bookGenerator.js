@@ -1005,7 +1005,7 @@ var books = [
   
   function populateBooks(arr){
       let newArr =[];
-      let genreArray = ["Horror", "Nonfiction", "Mystery", "Action", "Crime", "Romance", "Fantasy", "Sci Fi"]
+      let genreArray = ["Horror", "Nonfiction", "Mystery", "Action", "Crime", "Romance", "Fantasy", "Sci-Fic"]
       let counter = 0;
       for(let i = 0; i < arr.length; i++){
           let newObj = {};
@@ -1030,4 +1030,4 @@ var books = [
   }
 
   const bookArray = populateBooks(books);
-  console.log(bookArray)
+  console.log(bookArray);
