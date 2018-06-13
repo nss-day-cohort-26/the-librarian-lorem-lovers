@@ -1,6 +1,6 @@
 function DOMBuilder(element){
     document.getElementsByClassName("builder")[0].appendChild(element);
-}
+
     if(document.getElementById("error")){
         document.getElementsByClassName("builder")[0].removeChild(document.getElementById("error"));
     }
@@ -18,4 +18,4 @@ function DOMBuilder(element){
     if(element.id == "bookShelfDisplay"){
         document.getElementsByClassName("builder")[0].appendChild(element);
     }
-
+}
