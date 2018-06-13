@@ -1,6 +1,6 @@
 const librarian = {
     register: () => {},
-    checkoutBook: () => {},
+    checkoutBook: checkoutBook,
     checkIN: () => {},
     listBooks: () => {}
 }

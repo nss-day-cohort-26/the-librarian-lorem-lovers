@@ -8,7 +8,7 @@ function DOMBuilder(element){
         document.getElementById("errorSection").appendChild(element);
     }
     if(element.id == "searchSection"){
-        if(document.getElementById("searchSection") != null){
+        if(document.getElementById("searchSection") != undefined){
             document.getElementById("searchSection").innerHTML = ""
             document.getElementById("searchSection").appendChild(element);
         } else {
