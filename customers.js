@@ -6,8 +6,8 @@ const customers= {
         firstName: "Seth",
         lastName: "Dana",
         address: "2142 Rosemary Lane, Nashville TN 37210",
-        checkout: "",
-        return: ""
+        checkout: () => {},
+        return: () => {}
     },
     shu:{
         genre: "Science-Fiction",
@@ -16,8 +16,8 @@ const customers= {
         firstName: "Shuaib",
         lastName: "Sajid",
         address: "132 Brian Cir. Antioch,TN 37013",
-        checkout: "",
-        return: ""
+        checkout: () =>{},
+        return: () => {}
     },
     jake:{
         genre: "Fantasy",
@@ -26,8 +26,8 @@ const customers= {
         firstName: "Jake",
         lastName: "Neild",
         address:"100 interstate dr, nashville, TN 66666",
-        checkout: "",
-        return: ""
+        checkout: () => {},
+        return: () => {}
     },
     brett:{
         genre: "Fantasy",
@@ -35,6 +35,13 @@ const customers= {
         libraryCard: "",
         firstName: "Brett",
         lastName: "Shearin",
-        address: "954 Hawkins Rd, White Bluff, TN 37187"
-    } 
-}
+        address: "954 Hawkins Rd, White Bluff, TN 37187",
+        checkout: () => {},
+        return: () => {}
+    },
+    
+    
+        
+    
+
+    }
