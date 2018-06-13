@@ -18,6 +18,8 @@ const checkoutBook = (titleOfBook, authorOfBook, custName) => {
             break
         case (false):
             currentBook[0].checkedOut = true
+            let dueDate = moment().add(14, 'days').calendar()
+            currentBook[0].dueDate = dueDate
             customers[custName].bookshelf.push(currentBook[0])
             alert("Added book to your bookshelf")
             break
