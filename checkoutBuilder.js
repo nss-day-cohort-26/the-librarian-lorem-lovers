@@ -71,7 +71,8 @@ function checkoutBuilder(){
             let p1 = document.createElement("p");
             p1.textContent = "You checked out a book!"
             let p2 = document.createElement("p");
-            p2.textContent = `Thank you ${customerInput.value} for checking out ${titleInput.value} by ${authorInput.value}.  Your book will be due back at ${bookObj.dueDate}`
+
+            p2.textContent = `Thank you ${customerInput.value} for checking out ${titleInput.value} by ${authorInput.value}.  Your book will be due back at ${customers[cCustomer].bookshelf[customers[cCustomer].bookshelf.length-1].dueDate}`
             log.appendChild(p1);
             log.appendChild(document.createElement("br"))
             log.appendChild(p2);
