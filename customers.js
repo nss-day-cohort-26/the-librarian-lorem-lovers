@@ -1,40 +1,47 @@
 const customers= {
     seth:{
         genre: "Science-Fiction",
-        bookshelf: "",
+        bookshelf: [],
         libraryCard: "",
         firstName: "Seth",
         lastName: "Dana",
         address: "2142 Rosemary Lane, Nashville TN 37210",
-        checkout: "",
-        return: ""
+        checkout: () => {},
+        return: () => {}
     },
     shu:{
         genre: "Science-Fiction",
-        bookshelf: "",
+        bookshelf: [],
         libraryCard: "",
         firstName: "Shuaib",
         lastName: "Sajid",
         address: "132 Brian Cir. Antioch,TN 37013",
-        checkout: "",
-        return: ""
+        checkout: () =>{},
+        return: () => {}
     },
     jake:{
         genre: "Fantasy",
-        bookshelf: "",
+        bookshelf: [],
         libraryCard: "",
         firstName: "Jake",
         lastName: "Neild",
         address:"100 interstate dr, nashville, TN 66666",
-        checkout: "",
-        return: ""
+        checkout: () => {},
+        return: () => {}
     },
     brett:{
         genre: "Fantasy",
-        bookshelf: "",
+        bookshelf: [],
         libraryCard: "",
         firstName: "Brett",
         lastName: "Shearin",
-        address: "954 Hawkins Rd, White Bluff, TN 37187"
-    } 
-}
+        address: "954 Hawkins Rd, White Bluff, TN 37187",
+        checkout: () => {},
+        return: () => {}
+    },
+    
+    
+        
+    
+
+    }
