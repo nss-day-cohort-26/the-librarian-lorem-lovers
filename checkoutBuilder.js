@@ -57,6 +57,13 @@ function checkoutBuilder(){
             error.id = "error";
             error.style.color = "red";
             DOMBuilder(error);
+        } else if(bookObj.checkOut == true){
+            console.log("That Book is checked out")
+            let error = document.createElement("p");
+            error.textContent = "That book is already checked out"
+            error.id = "error";
+            error.style.color = "red";
+            DOMBuilder(error);
         } else{
             checkoutBook(cTitle, cAuthor, cCustomer);
             let log = document.createElement("section");
@@ -64,6 +71,10 @@ function checkoutBuilder(){
             p1.textContent = "You checked out a book!"
             let p2 = document.createElement("p");
             p2.textContent = `Thank you ${customerInput} for checking out ${titleInput} by ${authorInput}.  Your book will be due back at ${bookArray[bookObj].dueDate}`
+            log.appendChild(p1);
+            log.appendChild(document.createElement("br"))
+            log.appendChild(p2);
+            DOMBuilder(log)
         }
 
         

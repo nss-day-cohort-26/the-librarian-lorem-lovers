@@ -13,4 +13,7 @@ function DOMBuilder(element){
             document.getElementsByClassName("builder")[0].appendChild(element);
         }
     }
+    if(element.id == "bookShelfDisplay"){
+        document.getElementsByClassName("builder")[0].appendChild(element);
+    }
 }
