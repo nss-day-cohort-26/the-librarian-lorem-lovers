@@ -5,3 +5,5 @@ for(let i = 0; i < 8; i++){
     document.getElementsByClassName("menu-item")[i].addEventListener("click", genreSelector)
     document.getElementsByClassName("menu-item")[i].addEventListener("click", searchBuilder)
 }
+
+document.getElementById("checkOut").addEventListener("click", checkoutBuilder)
