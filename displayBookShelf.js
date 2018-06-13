@@ -32,6 +32,10 @@ function displayBookShelf(){
             }
             let newSection = document.createElement("section");
             newSection.id = "bookShelfDisplay";
+            newSection.style.padding = "10px"
+            let newSectionHeading = document.createElement("h2");
+            newSectionHeading.textContent = "Your bookshelf: "
+            newSection.appendChild(newSectionHeading)
             for(let i = 0; i < targetCustomer.bookshelf.length; i++){
                 let newBook = document.createElement("p");
                 let bookTitleAndAuthor = targetCustomer.bookshelf[i].title + " by " + targetCustomer.bookshelf[i].author;
